@@ -1,0 +1,33 @@
+<div id="picturesTab" ng-controller="pageController" class="container">
+  <div class="picAndCaption">
+    <h4>Captioning Images</h4>
+    <div ng-click="loadPicture('pics/rach_fuckeverything.jpg')">
+      <img class="examplepic" src= "pics/rach_fuckeverything.jpg"/>
+    </div> 
+  </div>
+  <div class="picAndCaption">
+    <h4>Photoshopping Images</h4>
+    <div ng-click="loadPicture('pics/lion_karoline_rach.jpg')">
+      <img class="examplepic" src= "pics/lion_karoline_rach.jpg"/>
+    </div>
+  </div>
+  <div class="picAndCaption">
+    <h4>MS Paint</h4>
+    <div ng-click="loadPicture('pics/karoline_high.jpg')">
+      <img class="examplepic" src= "pics/karoline_high.jpg"/>
+    </div>
+  </div>
+  <div class="picAndCaption">
+    <h4>Images to comic Strips</h4>
+    <div ng-click="loadPicture('pics/samson_terence_comic.jpg')">
+      <img class="examplepic" src= "pics/samson_terence_comic.jpg"/>
+    </div>
+  </div>
+  <div class="picAndCaption">
+    <h4>Regular Memes</h4>
+    <div ng-click="loadPicture('pics/rach_sodoge.jpg')">
+      <img class="examplepic" src= "pics/rach_sodoge.jpg"/>
+    </div>
+  </div>
+
+</div>

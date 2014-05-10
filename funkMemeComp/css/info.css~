@@ -1,0 +1,68 @@
+/*Formatting for the pictures given as examples */
+#logo{
+    height:30%;
+    width:30%;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+body {
+    height:70%;
+}
+
+#stageStatement {
+}
+
+#hidden {
+    width:10px;
+    height:10px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight:bolder;
+}
+
+#deadline {
+    text-align: center;
+    font-size:24px;
+    border-style: solid;
+    border-wdith: 5px;
+    margin-top: 2em;
+    border-color: blue;
+}
+
+.picAndCaption {
+    float:left;
+    margin-right: 30px;
+    overflow:hidden;
+    height: 250px;
+    width: 250px;
+}
+
+#picturesTab {
+    height: 100%;
+    width: 100%;
+}
+
+.examplepic {
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+
+#mainContainer {
+    
+}
+
+#upload-email {
+    text-align:left;
+    font-size: 24px;
+}
+
+#awesomepic {
+    margin-right:auto;
+    margin-left:auto;
+    height: 100%;
+    width: auto;
+}
