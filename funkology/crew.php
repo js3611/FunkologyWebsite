@@ -143,6 +143,44 @@
     </div>
 </div>
 
+<!--4th row-->
+
+<div class="row">
+	<div class="span2">
+    	<h3>Samson</h3>
+        <div class="row">
+        	<div class="span2">
+	    	<p><img src="images/crew2013/samson_cropped.jpg" width="182" height="250" /></p>	
+			</div>
+        </div>
+    </div>
+	<div class="span2">
+    	<h3>Jacklyn</h3>
+        <div class="row">
+        	<div class="span2">
+	    	<p><img src="images/crew2013/jacklyn_cropped.jpg" width="182" height="250" /></p>	
+			</div>
+        </div>
+    </div>
+	<div class="span2">
+    	<h3>Arati</h3>
+        <div class="row">
+        	<div class="span2">
+	    	<p><img src="images/crew2013/arati_cropped.jpg" width="182" height="250" /></p>	
+			</div>
+        </div>
+    </div>
+	<div class="span2">
+    	<h3>Warren</h3>
+        <div class="row">
+        	<div class="span2">
+	    	<p><img src="images/crew2013/warren_cropped.jpg" width="182" height="250" /></p>	
+			</div>
+        </div>
+    </div>
+
+</div>
+
 <!-- ---------------------------------------------------------------Crew 2012 ------------------------------------------------------------------ -->
 
 	<div>
