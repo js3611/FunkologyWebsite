@@ -26,6 +26,77 @@
   <h1>Events</h1>
   <p class="lead">Check out what we're up to, more events to come!</p>
 </div>
+
+<div class="row">
+    <div class="span6">
+    <p><img src="images/poppingworkshop.png" width="570" height="418"/></p>
+    </div>
+    <div class="span6">
+    <h2>Imperial Festival - Performance and Popping Workshop </h2>
+    <p class="lead"> Funkology taking part of Imperial Festival! We will be teaching basics and popping to anyone! </p>
+    <h3>Details</h3>
+    <p><strong>Price</strong>: *FREE* </p>
+    <p><strong>Location</strong>: Dance Tent</p>
+    <p><strong>Time</strong>: Performance: 6:30pm, 9/05/2014, Workshop: 1:30pm, 10/05/2014 </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span6">
+    <p><img src="images/flashmob2014.jpg" width="570" height="418"/></p>
+    </div>
+    <div class="span6">
+    <h2>CGCU Week - Flashmob 05/03/2014</h2>
+    <p class="lead">We organised a surprising flashmob in the middle of Queens Lawn!</p>
+    <h3>Details</h3>
+    <p><strong>Location</strong>: Queens Lawn</p>
+    <p><strong>Time</strong>: 1pm</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span6">
+    <p><img src="images/lough2014.png" width="570" height="418"/></p>
+    </div>
+    <div class="span6">
+    <h2>Loughborough Competition 09/03/2014</h2>
+    <p class="lead"> Loughborough competition 2014! Unfortunately the crew did not place due to the high standard of the competition. See you Loughborough next year! </p>
+    <h3>Details</h3>
+    <p><strong>Location</strong>: University of Loughborough </p>
+    <p><strong>Time</strong>: Whole day</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span6">
+    <p><img src="images/emw2014.png" width="570" height="418"/></p>
+    </div>
+    <div class="span6">
+    <h2>East Meets West 2014 </h2>
+    <p class="lead"> Funkology crew and the society people performing at EMW 2014! Check out our performance on 
+                        <a href="http://youtu.be/fASrBwfpG4g" target="_blank">YouTube!</a>
+    </p>
+    <h3>Details</h3>
+    <p><strong>Location</strong>: Novello Theatre (Mamma Mia!)</p>
+    <p><strong>Time</strong>: whole day</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span6">
+    <p><img src="images/mm2014.png" width="570" height="418"/></p>
+    </div>
+    <div class="span6">
+    <h2>Mega Maalai 2014 </h2>   
+    <p class="lead"> Funkology crew and the society people performing at MM 2014! Check out our performance on 
+                        <a href="http://youtu.be/QFnkd1ddjAA" target="_blank">YouTube!</a>
+    </p>
+    <h3>Details</h3>
+    <p><strong>Location</strong>: indigO2 Theatre, O2 Arena (!!)</p>
+    <p><strong>Time</strong>: whole day</p>
+    </div>
+</div>
+
 <div class="row">
     <div class="span6">
     <p><img src="images/funk10yrworkshop.png" width="570" height="418"/></p>
