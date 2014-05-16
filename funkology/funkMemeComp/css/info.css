@@ -11,9 +11,6 @@ body {
     height:70%;
 }
 
-#stageStatement {
-}
-
 #hidden {
     width:10px;
     height:10px;
@@ -27,7 +24,8 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     font-size:24px;
     border-style: solid;
-    border-wdith: 5px;
+    border-width: 3px;
+    padding: 8ypx;
     margin-top: 2em;
     border-color: blue;
 }
@@ -64,4 +62,10 @@ h1,h2,h3,h4,h5,h6 {
     margin-left:auto;
     height: 100%;
     width: auto;
+}
+
+#databaseLink {
+    text-align:center;
+    font-size: 22px;
+    text-decoration:underline;
 }
