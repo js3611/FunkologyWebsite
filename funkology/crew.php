@@ -185,7 +185,7 @@
 
 	<div>
 		<h3> <i>Crew 2012</i></h3>
-		<img src="images/ducks6by3.png" width="1170" height="659" usemap="#duckmap">
+		<img src="images/crew2012/ducks6by3.png" width="1170" height="659" usemap="#duckmap">
 		<map name="duckmap">
 		<!-- <a href='#' rel="tooltip" data-placement="top" data-html="true" data-original-title="<table><tr><td>Name:</td><td>Adrianna Liu</td></tr><tr><td>a.k.a.:</td><td>Love Welfare Officer</td><tr><td>Dance Inspirations:</td><td>Shaun Evaristo, Lyle Beniga, Shit Kingz</td></tr><tr><td>Started hip hop in:</td><td>2010</td></tr></table>"><area shape="rect" coords="0,0,190,215" alt="adri"></a>
 		<a href='#' rel="tooltip" data-placement="top" data-html="true" data-original-title="<table><tr><td>Name:</td><td>Adrianna Liu</td></tr><tr><td>a.k.a.:</td><td>Love Welfare Officer</td><tr><td>Dance Inspirations:</td><td>Shaun Evaristo, Lyle Beniga, Shit Kingz</td></tr><tr><td>Started hip hop in:</td><td>2010</td></tr></table>"><area shape="rect" coords="195,0,388,215" alt="adri"></a>

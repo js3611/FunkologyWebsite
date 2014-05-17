@@ -29,7 +29,7 @@
 
 <div class="row">
     <div class="span6">
-    <p><img src="images/poppingworkshop.png" width="570" height="418"/></p>
+    <p><img src="images/events2014/poppingworkshop.png" width="570" height="418"/></p>
     </div>
     <div class="span6">
     <h2>Imperial Festival - Performance and Popping Workshop </h2>
@@ -43,7 +43,7 @@
 
 <div class="row">
     <div class="span6">
-    <p><img src="images/flashmob2014.jpg" width="570" height="418"/></p>
+    <p><img src="images/events2014/flashmob2014.jpg" width="570" height="418"/></p>
     </div>
     <div class="span6">
     <h2>CGCU Week - Flashmob 05/03/2014</h2>
@@ -56,7 +56,7 @@
 
 <div class="row">
     <div class="span6">
-    <p><img src="images/lough2014.png" width="570" height="418"/></p>
+    <p><img src="images/events2014/lough2014.png" width="570" height="418"/></p>
     </div>
     <div class="span6">
     <h2>Loughborough Competition 09/03/2014</h2>
@@ -69,7 +69,7 @@
 
 <div class="row">
     <div class="span6">
-    <p><img src="images/emw2014.png" width="570" height="418"/></p>
+    <p><img src="images/events2014/emw2014.png" width="570" height="418"/></p>
     </div>
     <div class="span6">
     <h2>East Meets West 2014 </h2>
@@ -84,7 +84,7 @@
 
 <div class="row">
     <div class="span6">
-    <p><img src="images/mm2014.png" width="570" height="418"/></p>
+    <p><img src="images/events2014/mm2014.png" width="570" height="418"/></p>
     </div>
     <div class="span6">
     <h2>Mega Maalai 2014 </h2>   
@@ -99,7 +99,7 @@
 
 <div class="row">
     <div class="span6">
-    <p><img src="images/funk10yrworkshop.png" width="570" height="418"/></p>
+    <p><img src="images/events2014/funk10yrworkshop.png" width="570" height="418"/></p>
     </div>
     <div class="span6">
     <h2>10 Year Anniversary FuNkoLoGy workshop 07/12/2013</h2>
@@ -113,7 +113,7 @@
 
 <div class="row">
     <div class="span6">
-    <p><img src="images/rhul_ss.png" width="570" height="418"/></p>
+    <p><img src="images/events2013/rhul_ss.png" width="570" height="418"/></p>
     </div>
     <div class="span6">
     <h2>RHUL Competition 30/11/2013</h2>
@@ -139,7 +139,7 @@
 
 <div class="row">
     <div class="span6">
-    <p><img src="images/loughborough.png" width="570" height="418"/></p>
+    <p><img src="images/events2013/loughborough.png" width="570" height="418"/></p>
     </div>
     <div class="span6">
     <h2>Loughborough Competition 02/03/2013</h2>
@@ -149,7 +149,7 @@
 
 <div class="row">
 	<div class="span6">
-		<p><img src="images/bigTime-xmas-workshop.jpg" width="570" height="401"/></p>
+		<p><img src="images/events2013/bigTime-xmas-workshop.jpg" width="570" height="401"/></p>
 	</div>
 	<div class="span6">
 		<h2>bigTime Xmas Workshop 08/12/2012</h2>
@@ -164,7 +164,7 @@
 </div>
 <div class="row">
 	<div class="span6">
-    	<p><img src="images/Pizza_social_2012.jpg" width="570" height="428"/></p>
+    	<p><img src="images/events2013/Pizza_social_2012.jpg" width="570" height="428"/></p>
     </div>
     <div class="span6">
     	<h2>Pizza Social 10/11/2012</h2>
