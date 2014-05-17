@@ -18,7 +18,6 @@
 	    <li><a href="members.php">Membership</a></li>
 	    <li><a href="crew.php">Crew</a></li>
 	    <li><a href="classvideos.php">Video</a></li>
-	    <li><a href="funkMemeComp/info.html">Memes</a></li>
 
 	  </ul>
 	  <ul class="nav pull-right">
