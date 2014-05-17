@@ -49,7 +49,6 @@
       <iframe src="https://www.google.com/calendar/embed?showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;
       src=ICUFuNkoLoGy%40hotmail.co.uk&amp;color=%2329527A&amp;src=0qc4pjrpin8urkihbqeclr2v5g%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FLondon" 
       width="100%" height="600" scrolling="no"></iframe>
-      <!-- <iframe allowtransparency="true" src="restylegc-1.1.2/restylegc.php?src=ICUFuNkoLoGy%40hotmail.co.uk" width="100%" height="600" frameborder="0" scrolling="no"></iframe> -->
   </div>
 </div>
 <!--Pull in bottom bar and closing tags -->
