@@ -2,6 +2,10 @@
 	define('ABSLPATH', dirname(__FILE__));
 	include(ABSLPATH.'/session.php')
 ?>
+
+<!-- For pop up -->
+<?php include(ABSLPATH.'/popup.php'); ?>
+
 <!-- Specific Title -->
 <title>FuNkoLoGy - Imperial College Union</title>
 
@@ -20,27 +24,6 @@
 </head>
 <?PHP include(ABSLPATH.'/top.php') ?>
 
-<!-- Modal Pop Up. Put news/events here  -->
-<!-- Modal -->
-<!-- <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-header">
-    asdf<h3 id="myModalLabel">Notifications</h3>
-  </div>
-  <div class="modal-body">sadf
-    <p>*All of our classes are FREE during October. Come and check them out!*</p>
-    <p>**We are having a crew audition this thursday and saturday. 
-    Join our crew to partifipate in all the cool competitions and performances! 
-    Even if you think you are not ready, they still are free lessons so do not miss out!**</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-  </div>
-</div>
-<!-- Invoke modal -->
-<!--<script type="text/javascript">
-	$('#myModal').modal('show')
-</script>
- -->
 <!-- Page Content goes here -->
 <div class="hero-unit">
 	<div class="pagination-centered">
@@ -52,8 +35,8 @@
 <div class="row">
 	<div class="span4">
 		<h2>Announcements</h2>
-        <p>Interested to know what we're up to? Click <a href="events.php">here</a></p>
-        <p>Check out new Class times!</p>
+		<p>Interested to know what we're up to? Click <a href="events.php">here</a></p>
+        <p>Check out new Class <a href="classes.php">times!</a></p>
         <h3>Twitter Feed</h3>
         <p><a class="twitter-timeline" href="https://twitter.com/ICUFuNkoLoGy" data-widget-id="249576707709878272">Tweets by @ICUFuNkoLoGy</a></p>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

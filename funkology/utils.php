@@ -26,104 +26,82 @@ function getCurrentAcademicYear($shortForm=True) {
 <!-- Youtube data API helpers -->
 
 <?php
-require_once 'Zend/Loader.php'; // the Zend dir must be in your include_path
-Zend_Loader::loadClass('Zend_Gdata_YouTube');
 
-function getAndPrintVideoFeed($location = Zend_Gdata_YouTube::VIDEO_URI)
-{
-  $yt = new Zend_Gdata_YouTube();
-  // set the version to 2 to receive a version 2 feed of entries
-  $yt->setMajorProtocolVersion(2);
-  $videoFeed = $yt->getVideoFeed($location);
-  printVideoFeed($videoFeed);
-}
- 
-function printVideoFeed($videoFeed)
-{
-  $count = 1;
-  foreach ($videoFeed as $videoEntry) {
-    echo "Entry # " . $count . "<br>";
-    printVideoEntry($videoEntry);
-    echo "<br>";
-    $count++;
-  }
-}
+function getFunkyVideos($feedURL) {
 
-function printVideoEntry($videoEntry) 
-{
-  // the videoEntry object contains many helper functions
-  // that access the underlying mediaGroup object
-  echo 'Video: ' . $videoEntry->getVideoTitle() . "<br>";
-  echo 'Video ID: ' . $videoEntry->getVideoId() . "<br>";
-  echo 'Updated: ' . $videoEntry->getUpdated() . "<br>";
-  echo 'Description: ' . $videoEntry->getVideoDescription() . "<br>";
-  echo 'Category: ' . $videoEntry->getVideoCategory() . "<br>";
-  echo 'Tags: ' . implode(", ", $videoEntry->getVideoTags()) . "<br>";
-  echo 'Watch page: ' . $videoEntry->getVideoWatchPageUrl() . "<br>";
-  echo 'Flash Player Url: ' . $videoEntry->getFlashPlayerUrl() . "<br>";
-  echo 'Duration: ' . $videoEntry->getVideoDuration() . "<br>";
-  echo 'View count: ' . $videoEntry->getVideoViewCount() . "<br>";
-  echo 'Rating: ' . $videoEntry->getVideoRatingInfo() . "<br>";
-  echo 'Geo Location: ' . $videoEntry->getVideoGeoLocation() . "<br>";
-  echo 'Recorded on: ' . $videoEntry->getVideoRecorded() . "<br>";
-  
-  // see the paragraph above this function for more information on the 
-  // 'mediaGroup' object. in the following code, we use the mediaGroup
-  // object directly to retrieve its 'Mobile RSTP link' child
-  foreach ($videoEntry->mediaGroup->content as $content) {
-    if ($content->type === "video/3gpp") {
-      echo 'Mobile RTSP link: ' . $content->url . "<br>";
+   error_reporting(E_ALL);   
+   $sxml = simplexml_load_file($feedURL);
+   $i=0;
+   foreach ($sxml->entry as $entry) {
+      $media = $entry->children('media', true);
+      $id = getId($entry->id);
+
+      printFormattedVideoFeed($media->group->title,$media->group->description,$id);
+
     }
-  }
-  
-  echo "Thumbnails:<br>";
-  $videoThumbnails = $videoEntry->getVideoThumbnails();
+}?>
 
-  foreach($videoThumbnails as $videoThumbnail) {
-    echo $videoThumbnail['time'] . ' - ' . $videoThumbnail['url'];
-    echo ' height=' . $videoThumbnail['height'];
-    echo ' width=' . $videoThumbnail['width'] . "<br>";
-  }
-}
+<?php
 
-function getAndPrintFormattedVideoFeed($location = Zend_Gdata_YouTube::VIDEO_URI)
+function printFormattedVideoFeed($title, $description, $id)
 {
-  $yt = new Zend_Gdata_YouTube();
-  // set the version to 2 to receive a version 2 feed of entries
-  $yt->setMajorProtocolVersion(2);
-  $videoFeed = $yt->getVideoFeed($location);
-  printFormattedVideoFeed($videoFeed);
-}
-
-function printFormattedVideoFeed($videoFeed)
-{
-  foreach ($videoFeed as $videoEntry) {
-  	echo "<div class=\"row\">
+  	echo "  <div class=\"row\">
   			<div class=\"span12\">
-				
+	    		  <h3>" . $title . "</h3>	
 			</div>
 	  	</div>
   		<div class=\"row\">
-    		<div class=\"span6\">
-    			" . getVideoUrl($videoEntry) . "
-    		</div>
-    		<div class=\"span6\">
-	    		<h3>" . $videoEntry->getVideoTitle() . "</h3>
-			    <p> " . $videoEntry->getVideoDescription() . "</p>
-			</div>
+		 <div class=\"span6\">" . getVideoUrl($id) . "</div>
+
 		</div>";
-  }
 }
 
-function getVideoUrl($videoEntry) 
+//return Iframe
+function getVideoUrl($videoId) 
 {
-	return "<p><iframe width=\"576\" height=\"324\" src=\"". "https://www.youtube.com/embed/" . $videoEntry->getVideoId() ."\" frameborder=\"0\" allowfullscreen></iframe></p>";
+	return "<p><iframe width=\"576\" height=\"324\" src=\"". "https://www.youtube.com/embed/" . $videoId ."\" frameborder=\"0\" allowfullscreen></iframe></p>";
+}
+
+function getId($url) {
+     $arr = explode("/",$url);
+     return end($arr);
 }
 
 ?>
-<!-- 
-<?php 
-$addr = "http://gdata.youtube.com/feeds/api/users/ICUFunkology/uploads?max-results=10";
-getAndPrintVideoFeed($addr); 
+
+<!-- Calendar API -->
+
+<!-- Request this week's events  -->
+<?php
+
+function getFunkyWeeklyEvents() 
+{
+   error_reporting(E_ALL);   
+   $today = new DateTime();
+   $week = clone $today;
+//   $today->modify( '-1 year' );
+   $rfc3339date = $today->format(DateTime::RFC3339);
+   $rfc3339date = str_replace("+","-",$rfc3339date);
+   $week->modify( '+7 day' );
+   $rfc3339week = $week->format(DateTime::RFC3339);
+   $rfc3339week = str_replace("+","-",$rfc3339week);
+   $feedURL = "https://www.google.com/calendar/feeds/0qc4pjrpin8urkihbqeclr2v5g%40group.calendar.google.com/public/basic?start-min=".$rfc3339date."&start-max=".$rfc3339week;
+   $sxml = simplexml_load_file($feedURL);   
+   $ctr = 0;
+
+   $ret = "";
+
+   foreach ($sxml->entry as $entry) {
+      $ret .= "<p><font color=\"black\">".$entry->title."</font></p>";
+      $ret .= "<p><font color=\"black\">".$entry->summary."</font></p>";
+      $ctr = $ctr + 1;
+    }
+
+   if ($ctr == 0) {
+     $ret .= "<p><font color=\"black\">No Events this week</font></p>";
+   }
+
+   return $ret;
+}
+
 ?>
- -->

@@ -5,6 +5,7 @@
 	define('ABSLPATH', dirname(__FILE__));
 	include(ABSLPATH.'/session.php')
 ?>
+
 <!-- Page Title -->
 <title>Class Videos</title>
 
@@ -28,13 +29,12 @@
 </div>
 
 <!-- Refer to utils.php -->
-<p>Solving issues now... Sorry :(</p>
-<p>You can go to our channel on YouTube from the Social Media Tab.</p>
-<!-- <?php 
+<?php 
 	// uri to retrieve 10 recent video feed from user ICUFunkology
 	$addr = "http://gdata.youtube.com/feeds/api/users/ICUFunkology/uploads?max-results=10";
-	getAndPrintFormattedVideoFeed($addr); 
-?> -->
-<?PHP echo($_GET['page']);?>
+	getFunkyVideos($addr); 
+?>
+
+
 <!--Pull in bottom bar and closing tags -->
 <?PHP include(ABSLPATH.'/bottom.html') ?>
