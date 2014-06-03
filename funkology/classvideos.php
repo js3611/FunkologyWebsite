@@ -3,18 +3,18 @@
 
 <?php
 	define('ABSLPATH', dirname(__FILE__));
-	include(ABSLPATH.'/session.php')
+include(ABSLPATH.'/session.php')
 ?>
 
-<!-- Page Title -->
-<title>Class Videos</title>
+    <!-- Page Title -->
+    <title>Class Videos</title>
 
 <!--Specific styles-->
-<style type="text/css">
-</style>
+    <style type="text/css">
+    </style>
 
-<!--Specific js -->
-<script>
+    <!--Specific js -->
+    <script>
 	$(document).ready(function() {
 		$("li:contains('Classvideos')").addClass("active");
 	});
@@ -23,16 +23,16 @@
 </head>
 <?PHP include(ABSLPATH.'/top.php') ?>
 <!-- Page Content goes here -->
- <div class="hero-unit">
+    <div class="hero-unit">
 	<h1>Videos</h1>
 	<p class="lead">Check our latest videos for our classes, competitions and concepts.</p>
-</div>
+    </div>
 
-<!-- Refer to utils.php -->
+    <!-- Refer to utils.php -->
 <?php 
 	// uri to retrieve 10 recent video feed from user ICUFunkology
 	$addr = "http://gdata.youtube.com/feeds/api/users/ICUFunkology/uploads?max-results=10";
-	getFunkyVideos($addr); 
+getFunkyVideos($addr); 
 ?>
 
 

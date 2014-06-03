@@ -71,7 +71,8 @@ function getId($url) {
 
 <!-- Calendar API -->
 
-<!-- Request this week's events  -->
+<!-- Request weekly events  -->
+
 <?php
 
 function getFunkyWeeklyEvents() 
