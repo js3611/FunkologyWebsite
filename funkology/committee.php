@@ -32,114 +32,114 @@
 </div>
 	<div class="row">
     	<div class="span4">
-        	<h3>President - Chris Wood</h3>
+        	<h3>President - Jo Schlemper</h3>
             <div class="row">
             	<div class="span2">
-                	<p><img src="images/committee2013/chris_cropped.jpg" width="175" height="232" /></p>
+                	<p><img src="images/committee2014_15/jo_cropped.png" width="175" height="232" /></p>
                 </div>
                 <div class="span2">
-	                <p><strong>Alias</strong>: The President</p>
-    	            <p><strong>Email</strong>: ckw08@ic.ac.uk</p>
-                </div>
-            </div>
-        </div>
-        <div class="span4">
-        	<h3>Vice President - Kim Chin</h3>
-            <div class="row">
-            	<div class="span2">
-               		<p><img src="images/committee2013/kim_cropped.jpg" width="175" height="232" /></p>
-                </div>
-             	<div class="span2">
-                	<p><strong>Alias</strong>: Kimchi </p>
-    	            <p><strong>Email</strong>: kmc310@ic.ac.uk</p>
-                </div>
-            </div>
-        </div>
-        <div class="span4">
-        	<h3>Secretary - Dawn Graham</h3>
-            <div class="row">
-            	<div class="span2">
-                	<p><img src="images/committee2013/dawn_cropped.jpg" width="175" height="232" /></p>
-                </div>
-                <div class="span2">
-                	<p><strong>Alias</strong>: Secretary</p>
-    	            <p><strong>Email</strong>: sdg111@ic.ac.uk </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-    	<div class="span4">
-        	<h3>Treasurer - Nayeem Murshed</h3>
-            <div class="row">
-            	<div class="span2">
-                	<p><img src="images/committee2013/nayeem_cropped.jpg" width="175" height="232" /></p>
-                </div>
-                <div class="span2">
-                	<p><strong>Alias</strong>: The Hustler</p>
-    	            <p><strong>Email</strong>: nm2411@ic.ac.uk </p>
-                </div>
-            </div>
-        </div>
-        <div class="span4">
-        	<h3>Publicity Manager - Jo Schlemper</h3>
-            <div class="row">
-            	<div class="span2">
-                	<p><img src="images/committee2013/jo_cropped.jpg" width="175" height="232" /></p>
-                </div>
-                <div class="span2">
-                	<p><strong>Alias</strong>: YOO SCHLEMPA</p>
+	            <p><strong>Alias</strong>: Yo</p>
     	            <p><strong>Email</strong>: js3611@ic.ac.uk</p>
                 </div>
             </div>
         </div>
         <div class="span4">
-        	<h3>Social Secretary - Nirmz Arulampalam</h3>
+        	<h3>Vice President - Terence Tse</h3>
             <div class="row">
             	<div class="span2">
-                	<p><img src="images/committee2013/nirmz_cropped.jpg" width="175" height="232" /></p>
+               		<p><img src="images/committee2014_15/terence_cropped.png" width="175" height="232" /></p>
+                </div>
+             	<div class="span2">
+                	<p><strong>Alias</strong>: Sniffler </p>
+    	            <p><strong>Email</strong>: tt1611@ic.ac.uk</p>
+                </div>
+            </div>
+        </div>
+        <div class="span4">
+        	<h3>Secretary - Karoline Lende</h3>
+            <div class="row">
+            	<div class="span2">
+                	<p><img src="images/committee2014_15/karoline_cropped.png" width="175" height="232" /></p>
                 </div>
                 <div class="span2">
-                	<p><strong>Alias</strong>: Broski </p>
-    	            <p><strong>Email</strong>: na3012@ic.ac.uk</p>
+                	<p><strong>Alias</strong>: Karoline</p>
+    	            <p><strong>Email</strong>: kl1812@ic.ac.uk </p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
     	<div class="span4">
-        	<h3>Breaking Rep - Edward Hill</h3>
+        	<h3>Treasurer - Toni Wu</h3>
             <div class="row">
             	<div class="span2">
-                	<p><img src="images/committee2013/ed_cropped.jpg" width="175" height="232" /></p>
+                	<p><img src="images/committee2014_15/toni_cropped.png" width="175" height="232" /></p>
                 </div>
                 <div class="span2">
-                	<p><strong>Alias</strong>: Black Frankenstein/Derkhead</p>
-    	            <p><strong>Email</strong>: eah09@ic.ac.uk</p>
+                	<p><strong>Alias</strong>: Toni </p>
+    	            <p><strong>Email</strong>: tw2312@ic.ac.uk </p>
                 </div>
             </div>
         </div>
         <div class="span4">
-        	<h3>Gen Committee - SuviChack Thongborisoot</h3>
+        	<h3>Publicity Manager - Samson Lee</h3>
             <div class="row">
             	<div class="span2">
-                	<p><img src="images/committee2013/chak_cropped.jpg" width="175" height="232" /></p>
+                	<p><img src="images/committee2014_15/samson_cropped.png" width="175" height="232" /></p>
                 </div>
                 <div class="span2">
-                	<p><strong>Alias</strong>: Da General</p>
-    	            <p><strong>Email</strong>: st2511@ic.ac.uk</p>
+                	<p><strong>Alias</strong>: Samsaaan</p>
+    	            <p><strong>Email</strong>: swl313@ic.ac.uk</p>
                 </div>
             </div>
         </div>
         <div class="span4">
-        	<h3>Gen Committee - Yi Ting Low</h3>
+        	<h3>Social Secretary - Chaeyoung Chang</h3>
             <div class="row">
             	<div class="span2">
-                	<p><img src="images/committee2013/yiting_cropped.jpg" width="175" height="232" /></p>
+                	<p><img src="images/committee2014_15/chae_cropped.png" width="175" height="232" /></p>
                 </div>
                 <div class="span2">
-                	<p><strong>Alias</strong>: Da General 2</p>
-    	            <p><strong>Email</strong>: ytl211@ic.ac.uk</p>
+                	<p><strong>Alias</strong>:  Chae </p>
+    	            <p><strong>Email</strong>: cc4710@ic.ac.uk</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="span4">
+        	<h3>Breaking Rep - Fred Wong</h3>
+            <div class="row">
+            	<div class="span2">
+                	<p><img src="images/committee2014_15/fred_cropped.png" width="175" height="232" /></p>
+                </div>
+                <div class="span2">
+                	<p><strong>Alias</strong>: Funk Breaker</p>
+    	            <p><strong>Email</strong>: few13@ic.ac.uk</p>
+                </div>
+            </div>
+        </div>
+        <div class="span4">
+        	<h3>Gen Committee - Eirill Bachmann Mehammer</h3>
+            <div class="row">
+            	<div class="span2">
+                	<p><img src="images/committee2014_15/ella_cropped.png" width="175" height="232" /></p>
+                </div>
+                <div class="span2">
+                	<p><strong>Alias</strong>: Ella</p>
+    	            <p><strong>Email</strong>: ebm13@ic.ac.uk</p>
+                </div>
+            </div>
+        </div>
+        <div class="span4">
+        	<h3>Gen Committee - Nirmz Arulampalam </h3>
+            <div class="row">
+            	<div class="span2">
+                	<p><img src="images/committee2014_15/nirmz_cropped.png" width="175" height="232" /></p>
+                </div>
+                <div class="span2">
+                	<p><strong>Alias</strong>: Nirmz</p>
+    	            <p><strong>Email</strong>: na3012@ic.ac.uk</p>
                 </div>
             </div>
         </div>

@@ -26,6 +26,14 @@ function getCurrentAcademicYear($shortForm=True) {
 <!-- Youtube data API helpers -->
 
 <?php
+function getPlaylist($playlistID) {
+    $addr = "https://gdata.youtube.com/feeds/api/playlists/".$playlistID."?max-results=5";
+    getFunkyVideos($addr); 
+}    
+
+// uri to retrieve 10 recent video feed from user ICUFunkology
+//$addr = "http://gdata.youtube.com/feeds/api/users/ICUFunkology/uploads?max-results=10";
+
 
 function getFunkyVideos($feedURL) {
 
@@ -34,10 +42,12 @@ function getFunkyVideos($feedURL) {
    $i=0;
    foreach ($sxml->entry as $entry) {
       $media = $entry->children('media', true);
-      $id = getId($entry->id);
+      $id = $entry->link[0]['href'];
+      $id = getIdFromPlaylistXml($id);
 
-      printFormattedVideoFeed($media->group->title,$media->group->description,$id);
-
+      if ($media->group->title != "Private video") {
+          printFormattedVideoFeed($media->group->title,$media->group->description,$id);
+      }
     }
 }?>
 
@@ -62,9 +72,21 @@ function getVideoUrl($videoId)
 	return "<p><iframe width=\"576\" height=\"324\" src=\"". "https://www.youtube.com/embed/" . $videoId ."\" frameborder=\"0\" allowfullscreen></iframe></p>";
 }
 
+function getIdFromPlaylistXml($url) {
+    $id = multiexplode(array("v=","&"),$url)[1];
+     return $id;
+}
+
 function getId($url) {
      $arr = explode("/",$url);
      return end($arr);
+}
+
+function multiexplode ($delimiters,$string) {
+    
+    $ready = str_replace($delimiters, $delimiters[0], $string);
+    $launch = explode($delimiters[0], $ready);
+    return  $launch;
 }
 
 ?>

@@ -32,10 +32,10 @@
    $('#newsModal').modal({
      keyboard: true,
      show: true});
-  }
 
-  // set weekly cookie
-  $.cookie('visited', 'yes', { expires: 1, path: '/' });
+   // set weekly cookie
+   $.cookie('visited', 'yes', { expires: 1, path: '/' });
+  }
 </script>
 
 
