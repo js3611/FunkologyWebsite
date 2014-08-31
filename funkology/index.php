@@ -38,8 +38,10 @@
 		<p>Interested to know what we're up to? Click <a href="events.php">here</a></p>
         <p>Check out new class <a href="classes.php">timetable!</a></p>
         <h3>Twitter Feed</h3>
-        <p><a class="twitter-timeline" href="https://twitter.com/ICUFuNkoLoGy" data-widget-id="249576707709878272">Tweets by @ICUFuNkoLoGy</a></p>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <div class="twitter-feed">
+        	<a class="twitter-timeline" href="https://twitter.com/ICUFuNkoLoGy" data-widget-id="249576707709878272">Tweets by @ICUFuNkoLoGy</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
     </div>
     <div class="span8">
 		<h2>Who we are</h2>

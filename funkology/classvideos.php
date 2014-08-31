@@ -37,7 +37,6 @@ include(ABSLPATH.'/session.php')
    <li><a href="#competition" data-toggle="tab">Competitions</a></li>
    <li><a href="#performance" data-toggle="tab">Performances</a></li>
    <li><a href="#funk" data-toggle="tab">FunkyVids!</a></li>
-
 </ul>
 
 <div id="myTabContent" class="tab-content">
@@ -56,7 +55,6 @@ include(ABSLPATH.'/session.php')
     <div class="tab-pane fade" id="funk">
       <?php getPlaylist("PL65875C4F26AAC7A0")?>
    </div>
-
 </div>
 
 <p class="lead"> Want to see more? Check out our <a href="https://www.youtube.com/user/ICUFuNkoLoGy">YouTube</a> channel! <a>

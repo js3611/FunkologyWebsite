@@ -33,7 +33,7 @@
     <p>We offer all levels and styles of hip-hop choreography taught by our talented choreographers from the crew. Whether you are a seasoned dancer or a complete beginner, you are more than welcome to join in. Classes are offered on a drop-in basis and each week we teach something new so you can join at any time. Everyone is welcome here and we love having new people come to take classes with us.</p>
     <h3>Time and Place</h3>
     <p>Most of our classes take place either in Union Dining Hall (UDH), Activity Space 2 or Metric, which are all in the Union building, Beit Quad. 
-    (<a href="https://www.imperialcollegeunion.org/about-us/union-map">Union map</a>)</p>
+    (<a href="https://www.imperialcollegeunion.org/sites/default/files/files/MAP_LONG.pdf">Union map</a>)</p>
     <p>Peep at our timetable below to see where and when our classes happen!</p>
     
     <h3>Dress code</h3>
