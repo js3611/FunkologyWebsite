@@ -1,0 +1,42 @@
+[
+	{
+		"name":"Imran Sajid",
+		"imageUrl":"images/founders/imran_cropped.jpg",
+		"desc":"Imran Sajid was the first president and co-founder of FunKoLoGy. He brought with him experiences from professional troupes such as CultureShock UK and a keen creativity that shaped his style of dance."
+	},
+	{
+		"name":"Del Mak",
+		"imageUrl":"images/founders/del_cropped.jpg",
+		"desc":"Del Mak was highly respected for his vast knowledge of dance and movement. He's performed alongside renowned artists like Gwen Stefani and Leona Lewis and appeared in shows like MTV Europe Awards."
+	},
+	{
+		"name":"Tahreema",
+		"imageUrl":"images/founders/tahreema_cropped.jpg",
+		"desc":"Tahreema brought with her a unique fusion dance style of ethnic and urban influences to FunKoLoGy. She has received numerous awards in Contemporary Modern and has had many commercial experiences in the dance industry. "
+	},
+	{
+		"name":"Eduardo Aguilar Pelaez",
+		"imageUrl":"images/founders/eduardo_cropped.jpg",
+		"desc":"Been dancing since his teens, Eduardo Aguilar Pelaez was an invaluable member of the crew. He won the Breakdance University Dance-off as well as Best Dancer Award in Edinburgh 2005."
+	},
+		{
+		"name":"Anita Mohan",
+		"imageUrl":"images/founders/anita_cropped.jpg",
+		"desc":"Anita Mohan's journey in dance began in Pineapple Studio London. Her passion in dance has led her into the final 6 in auditions for the West End Musical 'Bombay Dreams' and many other endeavors."
+	},
+		{
+		"name":"Oliver Tang",
+		"imageUrl":"images/founders/oliver_cropped.jpg",
+		"desc":"Oliver Tang was a student of Pineapple Studios London, where he developed his passion and acuity for dancing."
+	},
+		{
+		"name":"Tiffany Mahmood",
+		"imageUrl":"images/founders/tiffany_cropped.jpg",
+		"desc":"A dancer since she was little, Tiffany Mahmood was a student at the Royal Academy of Dancing before moving on to Streetdance. She has competed in Inter-Varsity competitions and school tours."
+	},
+		{
+		"name":"Farouk Bhimji",
+		"imageUrl":"images/founders/farouk_cropped.jpg",
+		"desc":"Farouk, a dancer at Broadway Dance Center, was one of the main artistic coordinators of the group, adding new dimensions to the group's performance and competitions."
+	}
+]

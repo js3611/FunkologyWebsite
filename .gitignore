@@ -4,7 +4,9 @@
 *.txt~
 *.css~
 .gitignore~
-
+*.log
+*.log~
+*~
 
 crew2013/
 addr.txt
@@ -16,3 +18,5 @@ committee2013/
 Template for Funkology Website.docx
 manifesto_publicity_officer_jo.docx
 Funk Ducks/
+chrisnomination.docx
+newFunk/
