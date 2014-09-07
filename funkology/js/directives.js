@@ -35,21 +35,6 @@ angular.module('myApp.directives', []).
 			    }
 		   	};
 		}).
-  directive('myimg', function () {        
-        return {
-            restrict: 'E',
-            scope: { src:'=' },
-            replace:true,
-            template : '<img src="{{newSrc}}" width="100%" height="100%"/>',
-            link: function (scope) {
-                scope.$watch('src', function (newVal) {
-                   if (newVal) {
-                       scope.newSrc = newVal;
-                   }
-                });
-            }
-        };
-    }).
   directive('twitterWidget', 
 	  	function () {
 	  		return {
@@ -81,27 +66,18 @@ angular.module('myApp.directives', []).
 
             //Hide or show the modal
             scope.showModal = function (visible) {
-                if (visible)
-                {
+                if (visible) {
                     element.modal("show");
-                }
-                else
-                {
+                } else {
                     element.modal("hide");
                 }
             }
 
             //Check to see if the modal-visible attribute exists
-            if (!attrs.modalVisible)
-            {
-
+            if (!attrs.modalVisible){
                 //The attribute isn't defined, show the modal by default
                 scope.showModal(true);
-
-            }
-            else
-            {
-
+            } else {
                 //Watch for changes to the modal-visible attribute
                 scope.$watch("modalVisible", function (newValue, oldValue) {
                     scope.showModal(newValue);
@@ -113,9 +89,7 @@ angular.module('myApp.directives', []).
                     if (!scope.$$phase && !scope.$root.$$phase)
                         scope.$apply();
                 });
-
             }
-
         }
     };
 

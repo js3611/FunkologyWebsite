@@ -6,19 +6,19 @@ angular.module('myApp', [
   // 'ngRoute',
   'ui.router',
   'myApp.filters',
-  // 'myApp.services',
+  'myApp.services',
   'myApp.directives',
   'myApp.controllers'
 ]).
 config(function($stateProvider, $urlRouterProvider) {
   //
   // For any unmatched url, redirect to home
-  $urlRouterProvider.otherwise("home");
+  $urlRouterProvider.otherwise("/");
   //
   // Now set up the states
   $stateProvider
     .state('home', {
-      url: "/home",
+      url: "/",
       templateUrl: "partials/home.html",
       controller: 'FunkologyHomeController'
     })

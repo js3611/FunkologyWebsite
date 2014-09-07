@@ -10,7 +10,7 @@ angular.module('myApp.controllers', [])
   		$scope.show = false;
 
   		var start = moment(),
-  			end = moment().add('weeks','10');
+  			end = moment().add('weeks','1');
 
   			// console.log(start.format("YYYY-MM-DD"));
   			// console.log(end.format("YYYY-MM-DD"));	
