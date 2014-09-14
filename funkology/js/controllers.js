@@ -1,32 +1,44 @@
 'use strict';
 
 /* Controllers */
-angular.module('myApp.controllers', [])
-	.controller('ModalController', ['$scope','$location','$http','$sce',	
-  	function($scope,$location,$http,$sce) {
-  		//cache
-  		var cache;
+angular.module('myApp.controllers', [])	
+  .controller('HeaderController', ['$scope','$location',
+  	function($scope,$location) {
+  		$scope.isActive = function (viewLocation) { 
+        	return viewLocation === $location.path();
+    	};
+	}])
+  .controller('FunkologyController', ['$scope','$timeout',
+  	function($scope,$timeout) {
+
+
+  	}])
+  .controller('FunkologyHomeController', ['$http', '$scope', '$timeout','$sce','sessionCookie',
+  	function($http, $scope,$timeout,$sce, sessionCookie) {
+        var cache;
+
+  		$scope.onModalClick = function () {
+  			$scope.show = true;
+			$scope.events = cache;  			
+  		};
+        
 		//default
   		$scope.show = false;
 
+		//Build Http request to get calendar events
   		var start = moment(),
-  			end = moment().add('weeks','1');
+  			end = moment().add('1','weeks');
 
-  			// console.log(start.format("YYYY-MM-DD"));
-  			// console.log(end.format("YYYY-MM-DD"));	
-
-	  	var	range = {
+	  	var	params = {
   				'alt':'json-in-script',
 	  			'start-min':start.format('YYYY-MM-DD'),
 	  			'start-max':end.format('YYYY-MM-DD')
-	  		},
-	  		queryStr = _.map(range, function(v,k) {return k + '=' + v}).join('&'),
-	  		url = 'https://www.google.com/calendar/feeds/0qc4pjrpin8urkihbqeclr2v5g%40group.calendar.google.com/public/basic';
+	  		};
 
   		$http({
   			method : 'GET',
-  			url : url,
-  			params : range,
+  			url : 'https://www.google.com/calendar/feeds/0qc4pjrpin8urkihbqeclr2v5g%40group.calendar.google.com/public/basic',
+  			params : params,
   			crossDomain: true,
     		dataType: 'jsonp',
   		}).then(function (result) {
@@ -37,6 +49,7 @@ angular.module('myApp.controllers', [])
   				entries = data && data.feed && data.feed.entry;
 
   			if (!entries) {
+  				$scope.events = null;
   				$scope.show = false;
   			} else {
   				//Super hacky mode on!!!
@@ -54,33 +67,20 @@ angular.module('myApp.controllers', [])
 	  				};
 	  			});
 
-	  			//console.log(calendarEvents);
-
 	  			cache = calendarEvents;
-
 	  			$scope.events = calendarEvents;
-				//Using jQuery Cookies, initialised in index.html
-				$scope.show = !$.cookie("visited");
+				//Using jQuery Cookies
+				// sessionCookie.remove('visited');
+				console.log(sessionCookie.get('visited'));
+				if (!sessionCookie.get('visited')) {
+					$scope.show = true;
+					//create global cookie expires on upcoming sunday
+					var offset = moment().weekday() == 0? 1 : 7 - moment().weekday();
+					sessionCookie.set('visited','true',{expires:offset,path:'/'});
+				} 
+
 			}
 		});
-
-
-	}])
-  .controller('HeaderController', ['$scope','$location',
-  	function($scope,$location) {
-  		$scope.isActive = function (viewLocation) { 
-        	return viewLocation === $location.path();
-    	};
-	}])
-  .controller('FunkologyController', ['$scope', '$timeout',
-  	function($scope,$timeout) {
-
-  	}])
-  .controller('FunkologyHomeController', ['$scope', '$timeout',
-  	function($scope,$timeout) {
-        //$timeout = twttr.widgets.load();  			
-        $scope.name = "Jo";
-
   	}]) 
   .controller('FunkologyEventController', ['$scope', '$http','$sce',
 	function($scope,$http,$sce) {
