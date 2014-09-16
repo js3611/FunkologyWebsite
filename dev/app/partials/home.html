@@ -1,0 +1,53 @@
+<!-- Modal -->
+<div modal-show modal-visible="show" class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+	aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <h4 class="modal-title" id="myModalLabel"><font color="black">Funk This Week!</font></h4>
+    </div>
+    <div class="modal-body">
+      <p><h5><font color="black" ng-if="!events || events.length == 0">No event this week :( </font></h5></p>   
+      <p><h5><font color="black" ng-if="events.length > 0">This week we are up to the following events!</font></h5></p>
+      <div ng-if="events.length > 0" ng-repeat="event in events">
+        <hr />
+        <h4><font color="black" >{{event.title}}</font></h4>
+        <font color="black" ><h5 ng-bind-html="event.content"></h5></font>          
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Page content -->
+<div class="container">
+	<div class="hero-unit">
+		<div class="text-center">
+			<p><img src="images/logos/Design.png" width="295" height="216"/></p>
+			<p>We are a pioneering dance team based at Imperial College London, studying and specialising in hiphop and streetdance forms.</p>
+		</div>   
+	</div>
+	 
+	<div class="row">
+		<div class="col-md-4">
+			<h2>Announcements</h2>
+			<p>This week's <a ng-click="onModalClick()">events!</a></p>	
+			<p>Interested to know what we're up to in future? Click <a href="#/events">here</a></p>
+
+	        <p>Check out new class <a href="#/classes">timetable!</a></p>	        
+	        <h3>Twitter Feed</h3>
+
+	        <twitter-timeline><!--  Check js/controller.js --></twitter-timeline>
+	    </div>
+	    <div class="col-md-8">
+			<h2>Who we are</h2> 
+				<p>FuNkoLoGy began in 2003 as a simple outlet for a group of students and alumni of Imperial College to train and develop their passion for urban dance. What followed was a group of dancers who share a common goal to promote this discipline, share their expertise and push the boundaries of Hip-Hop Dance Performance across the UK university community.</p>
+				<h4>Come take class with us!</h4>
+				<p><iframe width="640" height="360" src="https://www.youtube.com/embed/K39rpgGImx8" frameborder="0" allowfullscreen></iframe></p>
+	    </div>
+	</div>
+</div>
